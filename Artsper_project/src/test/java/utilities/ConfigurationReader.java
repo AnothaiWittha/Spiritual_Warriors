@@ -24,6 +24,15 @@ public class ConfigurationReader {
 	}
 
 	public static String getProperty(String keyName) {
+		
+		String operatingSystem = System.getProperty("os.name");
+		
+		if (operatingSystem.equals("Mac OS X")) {
+			//System.out.println("Operating system: " + operatingSystem);
+			
+		}else {
+			//System.out.println("Operating system: " + operatingSystem);
+		}
 		return configFile.getProperty(keyName);
 	}
 }
