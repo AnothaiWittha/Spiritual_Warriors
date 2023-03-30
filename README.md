@@ -91,4 +91,22 @@ git push origin <branch_name>
 
     git branch -vv
     
+    
+    
+ Once you have pushed the new branch to your remote repository on GitHub, go to the GitHub website and navigate to the repository that contains the new branch.
+
+Click on the "Pull requests" tab in the repository menu.
+
+Click on the "New pull request" button.
+
+Select your new branch from the "base" dropdown list.
+
+Select the branch you want to merge into your new branch from the "compare" dropdown list.
+
+Click on the "Create pull request" button.
+
+Add a title and description for your pull request, and then click on the "Create pull request" button again to submit your pull request.
+
+Your pull request will now be reviewed by the repository owner, who can decide to accept or reject your changes. If your changes are accepted, they will be merged into the main branch of the repository.
+    
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://img.freepik.com/premium-vector/funny-dinosaur-work-hard-office-with-computer_7130-1510.jpg?w=740)
