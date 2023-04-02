@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import utilities.CommonMethods;
 import utilities.ConfigurationReader;
@@ -132,3 +133,5 @@ public class HomePage extends CommonMethods {
 	}
 
 }
+
+
