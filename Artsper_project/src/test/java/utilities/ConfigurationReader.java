@@ -1,18 +1,21 @@
 package utilities;
 
+
 import java.io.FileInputStream;
 import java.util.Properties;
 
 public class ConfigurationReader {
 
 	// Configuration Reader function
+	public static void main(String[] args) {
+		
+	}
 	private static Properties configFile;
 
 	static {
 		try {
 			String filePath = Constants.config_filepath;
 			FileInputStream input = new FileInputStream(filePath);
-
 			configFile = new Properties();
 			configFile.load(input);
 

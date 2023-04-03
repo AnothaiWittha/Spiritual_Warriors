@@ -20,23 +20,12 @@ public class HomePage2Test extends PageInitializer {
 	}
 
 	//Test 6
-
-	@Test (enabled = true)
-
-	public void loginSuccessfully() {
-
-	lp.loginSuccessfullyMethod();
-
-	}
-
-	//Test 6
-
+	
 	@Test (enabled = true)
 
 	public void searchBarBoxVerify() {
-
+	lp.loginSuccessfullyMethod();
 	hp2.searchBarBoxMethod();
-
 	 
 
 	}
