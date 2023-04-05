@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="pageTest.LoginPageTest">
         <methods>
           <include name="loginSucessfullly"/>
@@ -10,6 +11,14 @@
           <include name="beforeTest"/>
         </methods>
       </class> <!-- pageTest.LoginPageTest -->
+=======
+      <class name="pageTest.AysemTest$HomePageTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="selectUK"/>
+        </methods>
+      </class> <!-- pageTest.AysemTest$HomePageTest -->
+>>>>>>> 5534d6c52aab7b840fe836eb51aac4ac7515aec4
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
