@@ -8,6 +8,7 @@ import pageObject.LeasingPageLinkByFazli;
 import pageObject.LoginPage;
 import pageObject.MyFavoritePageByFazli;
 
+
 public class PageInitializer extends Driver {
 
 	public static HomePage hp;
@@ -16,6 +17,7 @@ public class PageInitializer extends Driver {
 	public static MyFavoritePageByFazli mf;
 	public static LeasingPageLinkByFazli lp2;
 	public static FilteringItemsPageByFazli vf; 
+
 
 	
 	public static void initialize() {
@@ -28,7 +30,6 @@ public class PageInitializer extends Driver {
 		vf = new FilteringItemsPageByFazli(); 
 		
 
-		
 	}
 
 }
