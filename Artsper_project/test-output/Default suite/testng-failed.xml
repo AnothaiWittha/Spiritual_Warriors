@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pageTest.AysemTest$HomePageTest">
+      <class name="pageTest.RimerTest">
         <methods>
+          <include name="clickYoutubeSuccessfully"/>
           <include name="beforeTest"/>
-          <include name="selectUK"/>
         </methods>
-      </class> <!-- pageTest.AysemTest$HomePageTest -->
+      </class> <!-- pageTest.RimerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
