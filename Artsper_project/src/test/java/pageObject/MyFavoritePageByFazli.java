@@ -68,7 +68,7 @@ public class MyFavoritePageByFazli {
 
 
     // Click on Heart icon at the bottom right of the image
-    @FindBy(xpath = "//*[@id=\"catalog-artworks\"]/article[1]/figure/div/i")
+    @FindBy(xpath = "//section[@id='catalog-artworks']/article[1]//i")
     public WebElement HeartIcon2; 
 
    

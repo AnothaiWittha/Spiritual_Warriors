@@ -56,7 +56,7 @@ public class LeasingPageLinkByFazli {
 		 ContactButton.click(); 
 		 CommonMethods.wait(3);
 		 CommonMethods.scrollToElement(ContactRequestButton);
-		 ContactRequestButton.click();
+	//	 ContactRequestButton.click();
 		 CommonMethods.wait(3);
 		 CommonMethods.sendText(yourName, ConfigurationReader.getProperty("Name"));
 	     CommonMethods.sendText(yourEmail, ConfigurationReader.getProperty("Email"));

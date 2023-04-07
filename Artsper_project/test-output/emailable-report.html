@@ -8,11 +8,30 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">30,149</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">241</td><td>all, smokeTestSuite, regressionSuite</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">pageTest.GiftCardsPageTest</td><td><a href="#m0">GiftCards</a></td><td rowspan="1">1680840651600</td><td rowspan="1">16086</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">pageTest.HomePageTest</td><td><a href="#m0">selectCountrySuccessfullly</a></td><td rowspan="1">1680851656297</td><td rowspan="1">11</td></tr><tr class="failedeven"><td><a href="#m1">verifyALlSocialMedia</a></td><td rowspan="1">1680851656340</td><td rowspan="1">9</td></tr><tr class="failedeven"><td><a href="#m2">verifyImageOnHP</a></td><td rowspan="1">1680851656360</td><td rowspan="1">16</td></tr><tr class="failedodd"><td rowspan="2">pageTest.LoginPageTest</td><td><a href="#m3">loginFail</a></td><td rowspan="1">1680851656249</td><td rowspan="1">31</td></tr><tr class="failedodd"><td><a href="#m4">loginSucessfullly</a></td><td rowspan="1">1680851656204</td><td rowspan="1">21</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">pageTest.GiftCardsPageTest#GiftCards</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">pageTest.HomePageTest#selectCountrySuccessfullly</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;pageObject.HomePage.selectCounty()&quot; because &quot;pageTest.HomePageTest.hp&quot; is null
+	at pageTest.HomePageTest.selectCountrySuccessfullly(HomePageTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">pageTest.HomePageTest#verifyALlSocialMedia</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;pageObject.HomePage.followArtsperText()&quot; because &quot;pageTest.HomePageTest.hp&quot; is null
+	at pageTest.HomePageTest.verifyALlSocialMedia(HomePageTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">pageTest.HomePageTest#verifyImageOnHP</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;pageObject.HomePage.slideImgOnHP()&quot; because &quot;pageTest.HomePageTest.hp&quot; is null
+	at pageTest.HomePageTest.verifyImageOnHP(HomePageTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">pageTest.LoginPageTest#loginFail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;pageObject.LoginPage.loginErrorMethod()&quot; because &quot;pageTest.LoginPageTest.lp&quot; is null
+	at pageTest.LoginPageTest.loginFail(LoginPageTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">pageTest.LoginPageTest#loginSucessfullly</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;pageObject.LoginPage.loginSuccessfullyMethod()&quot; because &quot;pageTest.LoginPageTest.lp&quot; is null
+	at pageTest.LoginPageTest.loginSucessfullly(LoginPageTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
