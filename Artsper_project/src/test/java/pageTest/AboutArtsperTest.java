@@ -8,6 +8,7 @@ import utilities.CommonMethods;
 import utilities.Driver;
 import utilities.PageInitializer;
 
+
 public class AboutArtsperTest extends PageInitializer{
 
 	@BeforeMethod
@@ -19,8 +20,9 @@ public class AboutArtsperTest extends PageInitializer{
 	@Test
 	public void AboutArtspert() {
 	
-	ab.aboutArtsperMethod();
-	ab.ClickYoutube();
+		ab.aboutArtsperMethod();
+		ab.ClickYoutube();
+	
 	}
 	
 	@AfterMethod

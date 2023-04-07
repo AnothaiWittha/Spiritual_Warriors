@@ -1,12 +1,16 @@
 package utilities;
 
 
+import pageObject.AboutArtsperPage;
+import pageObject.BlogPage;
 import pageObject.FilteringItemsPageByFazli;
+import pageObject.GiftCardsPage;
 import pageObject.HomePage;
 import pageObject.HomePage2;
 import pageObject.LeasingPageLinkByFazli;
 import pageObject.LoginPage;
 import pageObject.MyFavoritePageByFazli;
+
 
 
 public class PageInitializer extends Driver {
@@ -17,8 +21,11 @@ public class PageInitializer extends Driver {
 	public static MyFavoritePageByFazli mf;
 	public static LeasingPageLinkByFazli lp2;
 	public static FilteringItemsPageByFazli vf; 
-
-
+	
+	public static AboutArtsperPage ab;
+	public static BlogPage bp;
+	public static GiftCardsPage gc;
+	
 	
 	public static void initialize() {
 		//Driver.getDriver();
@@ -29,7 +36,10 @@ public class PageInitializer extends Driver {
 		lp2 = new LeasingPageLinkByFazli();
 		vf = new FilteringItemsPageByFazli(); 
 		
-
+		ab = new AboutArtsperPage();
+		bp = new BlogPage();
+		gc = new GiftCardsPage();
+		
 	}
 
 }
