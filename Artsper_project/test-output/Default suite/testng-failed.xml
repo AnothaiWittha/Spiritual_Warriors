@@ -3,30 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="pageTest.RimerTest">
-=======
-<<<<<<< HEAD
-      <class name="pageTest.LoginPageTest">
+      <class name="pageTest.MyInformationTestAysem">
         <methods>
-          <include name="loginSucessfullly"/>
-          <include name="tearDown"/>
           <include name="beforeTest"/>
+          <include name="budgetPreference"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- pageTest.LoginPageTest -->
-=======
-      <class name="pageTest.AysemTest$HomePageTest">
->>>>>>> origin/main
-        <methods>
-          <include name="clickYoutubeSuccessfully"/>
-          <include name="beforeTest"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- pageTest.RimerTest -->
-=======
-      </class> <!-- pageTest.AysemTest$HomePageTest -->
->>>>>>> 5534d6c52aab7b840fe836eb51aac4ac7515aec4
->>>>>>> origin/main
+      </class> <!-- pageTest.MyInformationTestAysem -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
