@@ -1,229 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="6" passed="0" failed="5" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-07T03:14:16 EDT" name="Suite" finished-at="2023-04-07T03:14:16 EDT" duration-ms="241">
+  <suite started-at="2023-04-09T00:22:05 EDT" name="Default suite" finished-at="2023-04-09T00:22:33 EDT" duration-ms="27585">
     <groups>
-      <group name="smokeTestSuit">
-        <method signature="LoginPageTest.loginSucessfullly()[pri:1, instance:pageTest.LoginPageTest@49b0b76]" name="loginSucessfullly" class="pageTest.LoginPageTest"/>
-        <method signature="HomePageTest.selectCountrySuccessfullly()[pri:2, instance:pageTest.HomePageTest@3e92efc3]" name="selectCountrySuccessfullly" class="pageTest.HomePageTest"/>
-        <method signature="LoginPageTest.loginFail()[pri:2, instance:pageTest.LoginPageTest@49b0b76]" name="loginFail" class="pageTest.LoginPageTest"/>
-        <method signature="HomePageTest.verifyALlSocialMedia()[pri:3, instance:pageTest.HomePageTest@3e92efc3]" name="verifyALlSocialMedia" class="pageTest.HomePageTest"/>
-        <method signature="HomePageTest.verifyImageOnHP()[pri:4, instance:pageTest.HomePageTest@3e92efc3]" name="verifyImageOnHP" class="pageTest.HomePageTest"/>
-      </group> <!-- smokeTestSuit -->
-      <group name="regressionSuite">
-        <method signature="LoginPageTest.loginSucessfullly()[pri:1, instance:pageTest.LoginPageTest@49b0b76]" name="loginSucessfullly" class="pageTest.LoginPageTest"/>
-        <method signature="HomePageTest.selectCountrySuccessfullly()[pri:2, instance:pageTest.HomePageTest@3e92efc3]" name="selectCountrySuccessfullly" class="pageTest.HomePageTest"/>
-        <method signature="LoginPageTest.loginFail()[pri:2, instance:pageTest.LoginPageTest@49b0b76]" name="loginFail" class="pageTest.LoginPageTest"/>
-        <method signature="HomePageTest.verifyALlSocialMedia()[pri:3, instance:pageTest.HomePageTest@3e92efc3]" name="verifyALlSocialMedia" class="pageTest.HomePageTest"/>
-        <method signature="HomePageTest.verifyImageOnHP()[pri:4, instance:pageTest.HomePageTest@3e92efc3]" name="verifyImageOnHP" class="pageTest.HomePageTest"/>
-      </group> <!-- regressionSuite -->
     </groups>
-    <test started-at="2023-04-07T03:14:16 EDT" name="Test" finished-at="2023-04-07T03:14:16 EDT" duration-ms="241">
-      <class name="pageTest.LoginPageTest">
-        <test-method signature="loginSucessfullly()[pri:1, instance:pageTest.LoginPageTest@49b0b76]" started-at="2023-04-07T03:14:16 EDT" name="loginSucessfullly" finished-at="2023-04-07T03:14:16 EDT" duration-ms="21" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "pageObject.LoginPage.loginSuccessfullyMethod()" because "pageTest.LoginPageTest.lp" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "pageObject.LoginPage.loginSuccessfullyMethod()" because "pageTest.LoginPageTest.lp" is null
-at pageTest.LoginPageTest.loginSucessfullly(LoginPageTest.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test started-at="2023-04-09T00:22:05 EDT" name="Default test" finished-at="2023-04-09T00:22:33 EDT" duration-ms="27585">
+      <class name="pageTest.HomePage2Test">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pageTest.HomePage2Test@2f7c2f4f]" started-at="2023-04-09T00:22:06 EDT" name="beforeTest" finished-at="2023-04-09T00:22:17 EDT" duration-ms="10991" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginSucessfullly -->
-        <test-method signature="loginFail()[pri:2, instance:pageTest.LoginPageTest@49b0b76]" started-at="2023-04-07T03:14:16 EDT" name="loginFail" finished-at="2023-04-07T03:14:16 EDT" duration-ms="31" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "pageObject.LoginPage.loginErrorMethod()" because "pageTest.LoginPageTest.lp" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "pageObject.LoginPage.loginErrorMethod()" because "pageTest.LoginPageTest.lp" is null
-at pageTest.LoginPageTest.loginFail(LoginPageTest.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- beforeTest -->
+        <test-method signature="searchBarBoxVerify()[pri:0, instance:pageTest.HomePage2Test@2f7c2f4f]" started-at="2023-04-09T00:22:17 EDT" name="searchBarBoxVerify" finished-at="2023-04-09T00:22:30 EDT" duration-ms="13219" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFail -->
-      </class> <!-- pageTest.LoginPageTest -->
-      <class name="pageTest.HomePageTest">
-        <test-method signature="selectCountrySuccessfullly()[pri:2, instance:pageTest.HomePageTest@3e92efc3]" started-at="2023-04-07T03:14:16 EDT" name="selectCountrySuccessfullly" finished-at="2023-04-07T03:14:16 EDT" duration-ms="11" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "pageObject.HomePage.selectCounty()" because "pageTest.HomePageTest.hp" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "pageObject.HomePage.selectCounty()" because "pageTest.HomePageTest.hp" is null
-at pageTest.HomePageTest.selectCountrySuccessfullly(HomePageTest.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- searchBarBoxVerify -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:pageTest.HomePage2Test@2f7c2f4f]" started-at="2023-04-09T00:22:30 EDT" name="closeBrowser" finished-at="2023-04-09T00:22:33 EDT" duration-ms="3320" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectCountrySuccessfullly -->
-        <test-method signature="verifyALlSocialMedia()[pri:3, instance:pageTest.HomePageTest@3e92efc3]" started-at="2023-04-07T03:14:16 EDT" name="verifyALlSocialMedia" finished-at="2023-04-07T03:14:16 EDT" duration-ms="9" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "pageObject.HomePage.followArtsperText()" because "pageTest.HomePageTest.hp" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "pageObject.HomePage.followArtsperText()" because "pageTest.HomePageTest.hp" is null
-at pageTest.HomePageTest.verifyALlSocialMedia(HomePageTest.java:37)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyALlSocialMedia -->
-        <test-method signature="verifyImageOnHP()[pri:4, instance:pageTest.HomePageTest@3e92efc3]" started-at="2023-04-07T03:14:16 EDT" name="verifyImageOnHP" finished-at="2023-04-07T03:14:16 EDT" duration-ms="16" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "pageObject.HomePage.slideImgOnHP()" because "pageTest.HomePageTest.hp" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "pageObject.HomePage.slideImgOnHP()" because "pageTest.HomePageTest.hp" is null
-at pageTest.HomePageTest.verifyImageOnHP(HomePageTest.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyImageOnHP -->
-      </class> <!-- pageTest.HomePageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- pageTest.HomePage2Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
