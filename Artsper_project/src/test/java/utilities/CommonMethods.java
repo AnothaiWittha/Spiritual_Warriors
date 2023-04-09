@@ -350,6 +350,13 @@ public class CommonMethods extends PageInitializer {
 		return elemTexts;
 	}
 	
-	
+	public static void clickListOfWebElements(List<WebElement> list, String element) {            
+        for (WebElement listOfElements : list) {            
+            if (listOfElements.getText().contains(element)) {        
+                listOfElements.click();
+                break;
+            }
+        }        
+    }
 
 }
