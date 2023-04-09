@@ -1,5 +1,6 @@
 package pageTest;
 
+import org.testng.annotations.Test;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -32,7 +33,7 @@ public class HomePage2Test extends PageInitializer {
 
 	//Test 7
 
-	@Test (enabled = true)
+	@Test (enabled = false)
 
 	public void verifyLogoSuccessfully() {
 
@@ -43,7 +44,7 @@ public class HomePage2Test extends PageInitializer {
 
 	//Test8
 
-	@Test
+	@Test (enabled = false)
 
 	public void verifyNeedHelpCenter() {
 

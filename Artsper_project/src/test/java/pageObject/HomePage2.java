@@ -28,7 +28,7 @@ public class HomePage2 extends CommonMethods {
 
 		public WebElement clickButton;
 
-		@FindBy(xpath = "//*[@id=\"catalog-artworks\"]/article[1]/div/h3")
+		@FindBy(xpath = "//*[@id='catalog-artworks']")
 
 		public WebElement getFarandoleText;
 
@@ -78,10 +78,10 @@ public class HomePage2 extends CommonMethods {
 
 		public void searchBarBoxMethod() {
 
+		logo.click();
 		searchBarBox.click();
-
-		searchBarBox.sendKeys("Farandole");
-
+		searchBarBox.sendKeys("Testa 2 Fernando Alday");
+		CommonMethods.wait(3);
 		clickButton.click();
 
 

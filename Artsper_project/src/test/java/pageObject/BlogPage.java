@@ -20,7 +20,7 @@ public class BlogPage {
 	public WebElement BlogLink;
 	
 	//Best Art Movies in Blog page
-	@FindBy(xpath = "//*[@id=\"home-artstyle\"]/div[2]/div[3]/a")
+	@FindBy(xpath = "//*[@id=\"home-artstyle\"]/div[2]/div[4]/a/article/div/div[1]/div/img")
 	public WebElement TheBestArtMovies;
 	
 	public void BlogClick() {

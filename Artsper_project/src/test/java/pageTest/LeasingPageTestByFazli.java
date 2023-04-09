@@ -1,5 +1,6 @@
 package pageTest;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -23,6 +24,13 @@ public class LeasingPageTestByFazli extends CommonMethods {
 		
 		
 	}
+	
+	@AfterMethod
+	public void tearDown() {
+		CommonMethods.wait(3);
+		Driver.closeDriver();
+	}
+
 	
 
 
