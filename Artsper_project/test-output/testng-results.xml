@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -78,4 +79,46 @@
       </class> <!-- pageTest.MyInformationTestAysem -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+<<<<<<< HEAD
+  <suite started-at="2023-04-09T11:10:13 EDT" name="Default suite" finished-at="2023-04-09T11:10:43 EDT" duration-ms="29391">
+    <groups>
+    </groups>
+    <test started-at="2023-04-09T11:10:13 EDT" name="Default test" finished-at="2023-04-09T11:10:43 EDT" duration-ms="29391">
+      <class name="pageTest.AboutArtsperTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pageTest.AboutArtsperTest@149e0f5d]" started-at="2023-04-09T11:10:13 EDT" name="beforeTest" finished-at="2023-04-09T11:10:29 EDT" duration-ms="16039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="AboutArtspert()[pri:0, instance:pageTest.AboutArtsperTest@149e0f5d]" started-at="2023-04-09T11:10:29 EDT" name="AboutArtspert" finished-at="2023-04-09T11:10:39 EDT" duration-ms="9108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AboutArtspert -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTest.AboutArtsperTest@149e0f5d]" started-at="2023-04-09T11:10:39 EDT" name="tearDown" finished-at="2023-04-09T11:10:43 EDT" duration-ms="4169" status="PASS">
+=======
+  <suite started-at="2023-04-09T11:20:39 EDT" name="Default suite" finished-at="2023-04-09T11:21:09 EDT" duration-ms="29695">
+    <groups>
+    </groups>
+    <test started-at="2023-04-09T11:20:39 EDT" name="Default test" finished-at="2023-04-09T11:21:09 EDT" duration-ms="29695">
+      <class name="pageTest.BlogPageTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pageTest.BlogPageTest@6ae5aa72]" started-at="2023-04-09T11:20:39 EDT" name="beforeTest" finished-at="2023-04-09T11:20:46 EDT" duration-ms="6556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="BlogpageTest()[pri:0, instance:pageTest.BlogPageTest@6ae5aa72]" started-at="2023-04-09T11:20:46 EDT" name="BlogpageTest" finished-at="2023-04-09T11:21:05 EDT" duration-ms="19610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BlogpageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTest.BlogPageTest@6ae5aa72]" started-at="2023-04-09T11:21:05 EDT" name="tearDown" finished-at="2023-04-09T11:21:09 EDT" duration-ms="3444" status="PASS">
+>>>>>>> 279f6122cbd83d9cb254f1a767653ba0c5e1a318
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pageTest.AboutArtsperTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
 </testng-results>
