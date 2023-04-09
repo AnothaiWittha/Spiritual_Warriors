@@ -1,10 +1,7 @@
 package utilities;
 
-
-
-
-
 import pageObject.BillingPageAysem;
+import pageObject.ArtworksPage;
 import pageObject.FilteringItemsPageByFazli;
 import pageObject.HomePage;
 import pageObject.HomePage2;
@@ -13,6 +10,8 @@ import pageObject.LoginPage;
 import pageObject.MyFavoritePageByFazli;
 import pageObject.MyInformationPageAysem;
 import pageObject.PDFPageAysem;
+import pageObject.ShoppingPage;
+
 
 
 public class PageInitializer extends Driver {
@@ -26,6 +25,11 @@ public class PageInitializer extends Driver {
 	public static MyInformationPageAysem mip;
 	public static BillingPageAysem bpa;
 	public static PDFPageAysem pdfp;
+	public static ArtworksPage awp;
+	public static ShoppingPage sp;
+
+
+
 	
 	public static void initialize() {
 		//Driver.getDriver();
@@ -38,6 +42,10 @@ public class PageInitializer extends Driver {
 		mip= new MyInformationPageAysem();
 		bpa= new BillingPageAysem();
 		pdfp=new PDFPageAysem();
+		vf = new FilteringItemsPageByFazli();
+		awp = new ArtworksPage();
+		sp = new ShoppingPage();
+
 		
 	}
 
