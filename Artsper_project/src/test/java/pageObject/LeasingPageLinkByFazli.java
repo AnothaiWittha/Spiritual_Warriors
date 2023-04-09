@@ -3,7 +3,7 @@ package pageObject;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
+
 
 import utilities.CommonMethods;
 import utilities.ConfigurationReader;
@@ -56,7 +56,7 @@ public class LeasingPageLinkByFazli {
 		 ContactButton.click(); 
 		 CommonMethods.wait(3);
 		 CommonMethods.scrollToElement(ContactRequestButton);
-		 ContactRequestButton.click();
+	//	 ContactRequestButton.click();
 		 CommonMethods.wait(3);
 		 CommonMethods.sendText(yourName, ConfigurationReader.getProperty("Name"));
 	     CommonMethods.sendText(yourEmail, ConfigurationReader.getProperty("Email"));
