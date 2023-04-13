@@ -22,7 +22,7 @@ public class HomePage2Test extends PageInitializer {
 
 	//Test 6
 	
-	@Test (enabled = true)
+	@Test (enabled = false)
 
 	public void searchBarBoxVerify() {
 	lp.loginSuccessfullyMethod();
@@ -44,7 +44,7 @@ public class HomePage2Test extends PageInitializer {
 
 	//Test8
 
-	@Test (enabled = false)
+	@Test (enabled = true)
 
 	public void verifyNeedHelpCenter() {
 

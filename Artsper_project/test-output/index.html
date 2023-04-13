@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,11 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
+
+              <span class="suite-name border-failed">Suite</span>
+
               <span class="suite-name border-passed">Suite</span>
+
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,17 +53,19 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-<<<<<<< HEAD
+
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>smokeTestAna.xml</span>
+
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
                     <span>C:\Users\Aysem\Documents\Spiritual_Warriors\Artsper_project\smokeTestAysem.xml</span>
-=======
+
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-<<<<<<< HEAD
+
                     <span>C:\Users\gamze\AppData\Local\Temp\testng-eclipse--491169708\testng-customsuite.xml</span>
-=======
+
                     <span>C:\Users\rimer\AppData\Local\Temp\testng-eclipse--818269214\testng-customsuite.xml</span>
->>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
->>>>>>> 3a88dba0acb575bc86f02fbed520a4ff7a40f44e
+
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -68,13 +74,16 @@
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-<<<<<<< HEAD
+
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>2 groups</span>
-=======
+
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>2 groups</span>
+
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
                     <span>0 groups</span>
->>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
+
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -106,11 +115,56 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-<<<<<<< HEAD
+
+                    <span class="method-stats">5 methods, 3 failed,  2 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pageTest.HomePageTest" class="method navigator-link" hash-for-method="selectCountrySuccessfullly">selectCountrySuccessfullly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pageTest.HomePageTest" class="method navigator-link" hash-for-method="verifyALlSocialMedia">verifyALlSocialMedia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pageTest.HomePageTest" class="method navigator-link" hash-for-method="verifyImageOnHP">verifyImageOnHP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pageTest.LoginPageTest" class="method navigator-link" hash-for-method="loginFail">loginFail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pageTest.LoginPageTest" class="method navigator-link" hash-for-method="loginSucessfullly">loginSucessfullly</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+
                     <span class="method-stats">5 methods,   5 passed</span>
-=======
+
                     <span class="method-stats">1 method,   1 passed</span>
->>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
+
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -121,20 +175,19 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-<<<<<<< HEAD
+
                         <a href="#" panel-name="suite-Default_suite" title="pageTest.GiftCardsPageTest" class="method navigator-link" hash-for-method="GiftCards">GiftCards</a> <!-- method navigator-link -->
-=======
-<<<<<<< HEAD
+
                         <a href="#" panel-name="suite-Suite" title="pageTest.BillingPageTestAysem" class="method navigator-link" hash-for-method="billingInformation">billingInformation</a> <!-- method navigator-link -->
->>>>>>> 3a88dba0acb575bc86f02fbed520a4ff7a40f44e
+
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="pageTest.MyInformationTestAysem" class="method navigator-link" hash-for-method="budgetPreference">budgetPreference</a> <!-- method navigator-link -->
-=======
+
                         <a href="#" panel-name="suite-Default_suite" title="pageTest.AboutArtsperTest" class="method navigator-link" hash-for-method="AboutArtspert">AboutArtspert</a> <!-- method navigator-link -->
->>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
+
                       </span>
                       <br/>
                       <span>
@@ -153,6 +206,7 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
+
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -164,44 +218,277 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-<<<<<<< HEAD
-              <span class="class-name">pageTest.GiftCardsPageTest</span>
-=======
-<<<<<<< HEAD
-              <span class="class-name">pageTest.MyInformationTestAysem</span>
-=======
-              <span class="class-name">pageTest.AboutArtsperTest</span>
->>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
->>>>>>> 3a88dba0acb575bc86f02fbed520a4ff7a40f44e
+              <img src="failed.png"/>
+              <span class="class-name">pageTest.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-<<<<<<< HEAD
-                  <a name="GiftCards">
-                  </a> <!-- GiftCards -->
-                  <span class="method-name">GiftCards</span>
-=======
-<<<<<<< HEAD
-                  <a name="budgetPreference">
-                  </a> <!-- budgetPreference -->
-                  <span class="method-name">budgetPreference</span>
+                  <a name="selectCountrySuccessfullly">
+                  </a> <!-- selectCountrySuccessfullly -->
+                  <span class="method-name">selectCountrySuccessfullly</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.49)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;2603:7000:a800:f36:0:0:0:16e4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bb/22gbqwkd3_q...}, goog:chromeOptions: {debuggerAddress: localhost:55090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3add19863e0ea53c5afd15f7cff1b1a6
+*** Element info: {Using=xpath, value=//*[@name=&apos;app_customer_registration&apos;]//a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at pageObject.LoginPage.loginSuccessfullyMethod(LoginPage.java:51)
+	at pageTest.HomePageTest.selectCountrySuccessfullly(HomePageTest.java:26)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyALlSocialMedia">
+                  </a> <!-- verifyALlSocialMedia -->
+                  <span class="method-name">verifyALlSocialMedia</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id=&quot;app-container&quot;]/footer/div[2]/section/div[1]/h4
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;2603:7000:a800:f36:0:0:0:16e4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+	at pageObject.HomePage.followArtsperText(HomePage.java:77)
+	at pageTest.HomePageTest.verifyALlSocialMedia(HomePageTest.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyImageOnHP">
+                  </a> <!-- verifyImageOnHP -->
+                  <span class="method-name">verifyImageOnHP</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;2603:7000:a800:f36:0:0:0:16e4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bb/22gbqwkd3_q...}, goog:chromeOptions: {debuggerAddress: localhost:55090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3add19863e0ea53c5afd15f7cff1b1a6
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at utilities.CommonMethods.getElementsText(CommonMethods.java:344)
+	at pageObject.HomePage.slideImgOnHP(HomePage.java:108)
+	at pageTest.HomePageTest.verifyImageOnHP(HomePageTest.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">pageTest.LoginPageTest</span>
+
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+
+              <span class="class-name">pageTest.GiftCardsPageTest</span>
+
+              <span class="class-name">pageTest.MyInformationTestAysem</span>
+
+              <span class="class-name">pageTest.AboutArtsperTest</span>
+
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+
+                  <a name="loginFail">
+                  </a> <!-- loginFail -->
+                  <span class="method-name">loginFail</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: was killed.
+  (chrome not reachable)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;2603:7000:a800:f36:0:0:0:16e4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: driver.version: Driver
+remote stacktrace: 0   chromedriver                        0x000000010740bae8 chromedriver + 4958952
+1   chromedriver                        0x00000001074037b3 chromedriver + 4925363
+2   chromedriver                        0x0000000106fc51d6 chromedriver + 475606
+3   chromedriver                        0x0000000106ff149c chromedriver + 656540
+4   chromedriver                        0x0000000106fed069 chromedriver + 639081
+5   chromedriver                        0x00000001070386e9 chromedriver + 947945
+6   chromedriver                        0x0000000107037a7f chromedriver + 944767
+7   chromedriver                        0x000000010702e9e3 chromedriver + 907747
+8   chromedriver                        0x0000000106ff8aef chromedriver + 686831
+9   chromedriver                        0x0000000106ffa00e chromedriver + 692238
+10  chromedriver                        0x00000001073c79ad chromedriver + 4680109
+11  chromedriver                        0x00000001073ccc12 chromedriver + 4701202
+12  chromedriver                        0x00000001073d379f chromedriver + 4728735
+13  chromedriver                        0x00000001073cdb7a chromedriver + 4705146
+14  chromedriver                        0x00000001073a027e chromedriver + 4518526
+15  chromedriver                        0x00000001073ed908 chromedriver + 4835592
+16  chromedriver                        0x00000001073eda87 chromedriver + 4835975
+17  chromedriver                        0x00000001073fd00f chromedriver + 4898831
+18  libsystem_pthread.dylib             0x00007ff807c4d4e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff807c48f6b thread_start + 15
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at utilities.Driver.getDriver(Driver.java:28)
+	at pageTest.LoginPageTest.beforeTest(LoginPageTest.java:17)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+
+                  <a name="GiftCards">
+                  </a> <!-- GiftCards -->
+                  <span class="method-name">GiftCards</span>
+
+                  <a name="budgetPreference">
+                  </a> <!-- budgetPreference -->
+                  <span class="method-name">budgetPreference</span>
+
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+
+                  <a name="loginSucessfullly">
+                  </a> <!-- loginSucessfullly -->
+                  <span class="method-name">loginSucessfullly</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: was killed.
+  (chrome not reachable)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;2603:7000:a800:f36:0:0:0:16e4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.1&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: driver.version: Driver
+remote stacktrace: 0   chromedriver                        0x000000010740bae8 chromedriver + 4958952
+1   chromedriver                        0x00000001074037b3 chromedriver + 4925363
+2   chromedriver                        0x0000000106fc51d6 chromedriver + 475606
+3   chromedriver                        0x0000000106ff149c chromedriver + 656540
+4   chromedriver                        0x0000000106fed069 chromedriver + 639081
+5   chromedriver                        0x00000001070386e9 chromedriver + 947945
+6   chromedriver                        0x0000000107037a7f chromedriver + 944767
+7   chromedriver                        0x000000010702e9e3 chromedriver + 907747
+8   chromedriver                        0x0000000106ff8aef chromedriver + 686831
+9   chromedriver                        0x0000000106ffa00e chromedriver + 692238
+10  chromedriver                        0x00000001073c79ad chromedriver + 4680109
+11  chromedriver                        0x00000001073ccc12 chromedriver + 4701202
+12  chromedriver                        0x00000001073d379f chromedriver + 4728735
+13  chromedriver                        0x00000001073cdb7a chromedriver + 4705146
+14  chromedriver                        0x00000001073a027e chromedriver + 4518526
+15  chromedriver                        0x00000001073ed908 chromedriver + 4835592
+16  chromedriver                        0x00000001073eda87 chromedriver + 4835975
+17  chromedriver                        0x00000001073fd00f chromedriver + 4898831
+18  libsystem_pthread.dylib             0x00007ff807c4d4e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff807c48f6b thread_start + 15
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at utilities.Driver.getDriver(Driver.java:28)
+	at pageTest.LoginPageTest.beforeTest(LoginPageTest.java:17)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/annohwitt/Spiritual_Warriors/Artsper_project/smokeTestAna.xml</span>
+
                   <a name="personalInfoMethod">
                   </a> <!-- personalInfoMethod -->
                   <span class="method-name">personalInfoMethod</span>
-=======
+
                   <a name="AboutArtspert">
                   </a> <!-- AboutArtspert -->
                   <span class="method-name">AboutArtspert</span>
->>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
->>>>>>> 3a88dba0acb575bc86f02fbed520a4ff7a40f44e
+
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -246,38 +533,38 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-<<<<<<< HEAD
+
             <span class="header-content">C:\Users\gamze\AppData\Local\Temp\testng-eclipse--491169708\testng-customsuite.xml</span>
-=======
-<<<<<<< HEAD
+
             <span class="header-content">C:\Users\Aysem\Documents\Spiritual_Warriors\Artsper_project\smokeTestAysem.xml</span>
-=======
-<<<<<<< HEAD
+
             <span class="header-content">/private/var/folders/bb/22gbqwkd3_q1rgfz4s3xgwq40000gn/T/testng-eclipse--1871616469/testng-customsuite.xml</span>
-=======
+
             <span class="header-content">C:\Users\rimer\AppData\Local\Temp\testng-eclipse--818269214\testng-customsuite.xml</span>
->>>>>>> 279f6122cbd83d9cb254f1a767653ba0c5e1a318
->>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
->>>>>>> 3a88dba0acb575bc86f02fbed520a4ff7a40f44e
+
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pageTest.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;pageTest.HomePageTest&quot;/&gt;
+
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-<<<<<<< HEAD
+
       &lt;class name=&quot;pageTest.GiftCardsPageTest&quot;/&gt;
-=======
-<<<<<<< HEAD
+
       &lt;class name=&quot;pageTest.BillingPageTestAysem&quot;/&gt;
       &lt;class name=&quot;pageTest.MyInformationTestAysem&quot;/&gt;
       &lt;class name=&quot;pageTest.PDFPageTestAysem&quot;/&gt;
-=======
+
       &lt;class name=&quot;pageTest.AboutArtsperTest&quot;/&gt;
->>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
->>>>>>> 3a88dba0acb575bc86f02fbed520a4ff7a40f44e
+
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -291,7 +578,11 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+
+                <span class="test-name">Test (2 classes)</span>
+
                 <span class="test-name">Test (3 classes)</span>
+
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -301,11 +592,30 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-<<<<<<< HEAD
+
             <div class="test-group">
               <span class="test-group-name">regressionSuite</span>
               <br/>
               <div class="method-in-group">
+
+                <span class="method-in-group-name">loginFail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginSucessfullly</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">selectCountrySuccessfullly</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyALlSocialMedia</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyImageOnHP</span>
+
                 <span class="method-in-group-name">billingInformation</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -319,6 +629,7 @@
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">searchBar</span>
+
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -326,6 +637,28 @@
               <span class="test-group-name">smokeTestSuit</span>
               <br/>
               <div class="method-in-group">
+
+                <span class="method-in-group-name">loginFail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginSucessfullly</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">selectCountrySuccessfullly</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyALlSocialMedia</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyImageOnHP</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+
                 <span class="method-in-group-name">billingInformation</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -342,8 +675,7 @@
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
-=======
->>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
+
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -360,7 +692,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-<<<<<<< HEAD
+
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'selectCountrySuccessfullly')
+data.setCell(0, 2, 'pageTest.HomePageTest')
+data.setCell(0, 3, 6606);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyALlSocialMedia')
+data.setCell(1, 2, 'pageTest.HomePageTest')
+data.setCell(1, 3, 6605);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyImageOnHP')
+data.setCell(2, 2, 'pageTest.HomePageTest')
+data.setCell(2, 3, 2087);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginFail')
+data.setCell(3, 2, 'pageTest.LoginPageTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginSucessfullly')
+data.setCell(4, 2, 'pageTest.LoginPageTest')
+data.setCell(4, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+
 data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchBar')
@@ -389,40 +750,37 @@ return data;
               <span class="suite-total-time">Total running time: 55 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
-=======
+
 data.addRows(1);
 data.setCell(0, 0, 0)
-<<<<<<< HEAD
+
 data.setCell(0, 1, 'GiftCards')
 data.setCell(0, 2, 'pageTest.GiftCardsPageTest')
 data.setCell(0, 3, 14114);
-=======
-<<<<<<< HEAD
+
+
 data.setCell(0, 1, 'AboutArtspert')
 data.setCell(0, 2, 'pageTest.AboutArtsperTest')
 data.setCell(0, 3, 9108);
-=======
+
 data.setCell(0, 1, 'BlogpageTest')
 data.setCell(0, 2, 'pageTest.BlogPageTest')
 data.setCell(0, 3, 19610);
->>>>>>> 279f6122cbd83d9cb254f1a767653ba0c5e1a318
->>>>>>> 3a88dba0acb575bc86f02fbed520a4ff7a40f44e
+
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-<<<<<<< HEAD
+
               <span class="suite-total-time">Total running time: 14 seconds</span>
-=======
-<<<<<<< HEAD
+
               <span class="suite-total-time">Total running time: 9 seconds</span>
-=======
+
               <span class="suite-total-time">Total running time: 19 seconds</span>
->>>>>>> 279f6122cbd83d9cb254f1a767653ba0c5e1a318
->>>>>>> 3a88dba0acb575bc86f02fbed520a4ff7a40f44e
+
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
->>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
+
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -446,29 +804,58 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-<<<<<<< HEAD
+
+              <div class="chronological-class-name">pageTest.HomePageTest</div> <!-- chronological-class-name -->
+
               <div class="chronological-class-name">pageTest.GiftCardsPageTest</div> <!-- chronological-class-name -->
-=======
-<<<<<<< HEAD
+
               <div class="chronological-class-name">pageTest.BillingPageTestAysem</div> <!-- chronological-class-name -->
-=======
+
               <div class="chronological-class-name">pageTest.AboutArtsperTest</div> <!-- chronological-class-name -->
->>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
->>>>>>> 3a88dba0acb575bc86f02fbed520a4ff7a40f44e
+
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pageTest.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pageTest.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pageTest.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-<<<<<<< HEAD
+
+                <span class="method-name">loginFail</span>
+                <span class="method-start">11502 ms</span>
+
                 <span class="method-name">GiftCards</span>
                 <span class="method-start">6199 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
                 <span class="method-start">20318 ms</span>
-=======
-<<<<<<< HEAD
+
                 <span class="method-name">searchBar</span>
                 <span class="method-start">5599 ms</span>
               </div> <!-- test-method -->
@@ -522,25 +909,73 @@ return data;
                 <span class="method-name">afterTest</span>
                 <span class="method-start">72432 ms</span>
               </div> <!-- configuration-class after -->
-=======
-<<<<<<< HEAD
+
                 <span class="method-name">AboutArtspert</span>
                 <span class="method-start">16046 ms</span>
+
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25161 ms</span>
-=======
-                <span class="method-name">BlogpageTest</span>
-                <span class="method-start">6559 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">26176 ms</span>
->>>>>>> 279f6122cbd83d9cb254f1a767653ba0c5e1a318
->>>>>>> 3a88dba0acb575bc86f02fbed520a4ff7a40f44e
+                <span class="method-start">11517 ms</span>
               </div> <!-- configuration-method after -->
->>>>>>> fd9a8f80d0d8881fb876d58fb370e25dd1d17491
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pageTest.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">selectCountrySuccessfullly</span>
+                <span class="method-start">19327 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyImageOnHP</span>
+                <span class="method-start">19327 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pageTest.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginSucessfullly</span>
+                <span class="method-start">19327 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pageTest.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyALlSocialMedia</span>
+                <span class="method-start">19327 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pageTest.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19372 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pageTest.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21422 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25939 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+
+                <span class="method-start">25950 ms</span>
+
+                <span class="method-start">26176 ms</span>
+
+              </div> <!-- configuration-method after -->
+
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
