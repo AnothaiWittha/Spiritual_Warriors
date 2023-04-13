@@ -61,14 +61,34 @@ function toggleAllBoxes() {
 </tr>
 <tr><td>Total time:</td><td>29 seconds (29000 ms)</td>
 </tr><tr>
+
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 09 10:55:22 EDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>42 seconds (42994 ms)</td>
+
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 09 10:52:42 EDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>72 seconds (72770 ms)</td>
+
+</tr><tr>
+
 <td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,6 +96,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+
 <td title='pageTest.LoginPageTest.beforeTest()'><b>beforeTest</b><br>Test class: pageTest.LoginPageTest</td>
 <td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: was killed.
   (chrome not reachable)
@@ -188,6 +209,62 @@ remote stacktrace: 0   chromedriver                        0x000000010740bae8 ch
 	at pageTest.LoginPageTest.beforeTest(LoginPageTest.java:17)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+
+<td title='pageTest.ArtworksPageTest.verifyArtworksButton()'><b>verifyArtworksButton</b><br>Test class: pageTest.ArtworksPageTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;select class=&quot;ais-SortBy-select&quot;&gt;...&lt;/select&gt; is not clickable at point (1250, 42). Other element would receive the click: &lt;span class=&quot;navigation__icon icon-user-account&quot;&gt;&lt;/span&gt;
+  (Session info: chrome=111.0.5563.147)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-2I04UOU&apos;, ip: &apos;192.168.1.228&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gamze\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b1b404a05445b575ca73f4072defd10f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+	at pageObject.ArtworksPage.verifyArtworksButtonMethod(ArtworksPage.java:69)
+	at pageTest.ArtworksPageTest.verifyArtworksButton(ArtworksPageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1314228008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1314228008'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;select class=&quot;ais-SortBy-select&quot;&gt;...&lt;/select&gt; is not clickable at point (1250, 42). Other element would receive the click: &lt;span class=&quot;navigation__icon icon-user-account&quot;&gt;&lt;/span&gt;
+  (Session info: chrome=111.0.5563.147)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-2I04UOU&apos;, ip: &apos;192.168.1.228&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\gamze\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b1b404a05445b575ca73f4072defd10f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+	at pageObject.ArtworksPage.verifyArtworksButtonMethod(ArtworksPage.java:69)
+	at pageTest.ArtworksPageTest.verifyArtworksButton(ArtworksPageTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
@@ -204,17 +281,26 @@ remote stacktrace: 0   chromedriver                        0x000000010740bae8 ch
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
+
 <td>11</td>
 <td>pageTest.LoginPageTest@6ef888f6</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+
+<td>5</td>
+<td>pageTest.ArtworksPageTest@5876a9af</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+
 <tr>
 <td title='pageTest.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: pageTest.LoginPageTest</td>
 <td></td>
@@ -691,6 +777,48 @@ remote stacktrace: 0   chromedriver                        0x000000010740bae8 ch
 </pre></div></td>
 <td>0</td>
 <td>pageTest.LoginPageTest@6ef888f6</td></tr>
+
+<tr>
+<td title='pageTest.ShoppingPageTest.removeItemsMethod()'><b>removeItemsMethod</b><br>Test class: pageTest.ShoppingPageTest</td>
+<td></td>
+<td>8</td>
+<td>pageTest.ShoppingPageTest@9597028</td></tr>
+<tr>
+<td title='pageTest.ShoppingPageTest.buyArtworkMethod()'><b>buyArtworkMethod</b><br>Test class: pageTest.ShoppingPageTest</td>
+<td></td>
+<td>6</td>
+<td>pageTest.ShoppingPageTest@9597028</td></tr>
+<tr>
+<td title='pageTest.ShoppingPageTest.loginSuccessfully()'><b>loginSuccessfully</b><br>Test class: pageTest.ShoppingPageTest</td>
+<td></td>
+<td>6</td>
+<td>pageTest.ShoppingPageTest@9597028</td></tr>
+
+<td title='pageTest.MyInformationTestAysem.personalInfoMethod()'><b>personalInfoMethod</b><br>Test class: pageTest.MyInformationTestAysem</td>
+<td></td>
+<td>13</td>
+<td>pageTest.MyInformationTestAysem@77fbd92c</td></tr>
+<tr>
+<td title='pageTest.BillingPageTestAysem.billingInformation()'><b>billingInformation</b><br>Test class: pageTest.BillingPageTestAysem</td>
+<td></td>
+<td>20</td>
+<td>pageTest.BillingPageTestAysem@2a798d51</td></tr>
+<tr>
+<td title='pageTest.MyInformationTestAysem.budgetPreference()'><b>budgetPreference</b><br>Test class: pageTest.MyInformationTestAysem</td>
+<td></td>
+<td>0</td>
+<td>pageTest.MyInformationTestAysem@77fbd92c</td></tr>
+<tr>
+<td title='pageTest.PDFPageTestAysem.windowHandle()'><b>windowHandle</b><br>Test class: pageTest.PDFPageTestAysem</td>
+<td></td>
+<td>0</td>
+<td>pageTest.PDFPageTestAysem@67c27493</td></tr>
+<tr>
+<td title='pageTest.BillingPageTestAysem.searchBar()'><b>searchBar</b><br>Test class: pageTest.BillingPageTestAysem</td>
+<td></td>
+<td>20</td>
+<td>pageTest.BillingPageTestAysem@2a798d51</td></tr>
+
 </table><p>
 </body>
 </html>
