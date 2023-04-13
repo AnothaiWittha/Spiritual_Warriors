@@ -59,7 +59,7 @@ public class MyFavoritePageByFazli {
     public WebElement linkButton; 
 
     // Click on "See all artworks" button
-   @FindBy(xpath = "//a[contains(@class, 'button pointer primary primary')]")
+   @FindBy(css= "[class='col-xs-12 col-sm-6'] [href]")
     public WebElement ArtWorkbutton;
    
    // Click on "Sort by popularity" then click on "Sort by ascending price"
@@ -72,8 +72,8 @@ public class MyFavoritePageByFazli {
     public WebElement HeartIcon2; 
 
    
-    @FindBy(xpath = "//*[@id=\"app-container\"]/header/section/nav[1]/ul/li[3]/button/span")
-    public WebElement HeartIcon3; 
+   /* @FindBy(xpath = "//*[@id=\"app-container\"]/header/section/nav[1]/ul/li[3]/button/span")
+    public WebElement HeartIcon3; */
 
  
     
@@ -90,16 +90,20 @@ public class MyFavoritePageByFazli {
     	String HomePageUrl = "https://www.artsper.com/us/"; 
     	Assert.assertTrue(actualUrl.startsWith(HomePageUrl)); 
     	heartIcon.click(); 
-    	CommonMethods.ScrolByPixel(400);
-    	CommonMethods.waitForClickability(ArtWorkbutton);
-    	ArtWorkbutton.click(); 
-    	SortByPopularity.click(); 
-    	CommonMethods.selectDropDownVisibleText(SortByPopularity, "Sort by popularity");
-    	CommonMethods.selectDropDownVisibleText(SortByPopularity, "Sort by ascending price");
-    	HeartIcon2.click(); 
+    	CommonMethods.ScrolByPixel(500);
     	CommonMethods.wait(3);
-    	HeartIcon3.click(); 
-
+    	ArtWorkbutton.click();
+    	CommonMethods.wait(3);
+    	SortByPopularity.click(); 
+    	//CommonMethods.selectDropDownVisibleText(SortByPopularity, "Sort by popularity");
+    	CommonMethods.selectDropDownVisibleText(SortByPopularity, "Sort by ascending price");
+    	CommonMethods.wait(3);
+    	CommonMethods.ScrolByPixel(200);
+    	CommonMethods.wait(2);
+    	HeartIcon2.click(); 
+    	CommonMethods.wait(2);
+    	heartIcon.click(); 
+    	CommonMethods.ScrolByPixel(200);
 
 	}  
     

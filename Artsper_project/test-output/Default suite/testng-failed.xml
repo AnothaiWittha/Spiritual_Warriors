@@ -3,31 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="pageTest.BlogPageTest">
-=======
-<<<<<<< HEAD
-      <class name="pageTest.MyInformationTestAysem">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="budgetPreference"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- pageTest.MyInformationTestAysem -->
-=======
-      <class name="pageTest.HomePage2Test">
->>>>>>> 279f6122cbd83d9cb254f1a767653ba0c5e1a318
+      <class name="pageTest.MyFavoritePageTestByFazli">
         <methods>
           <include name="tearDown"/>
           <include name="beforeTest"/>
-          <include name="BlogpageTest"/>
+          <include name="testcase1"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- pageTest.BlogPageTest -->
-=======
-      </class> <!-- pageTest.HomePage2Test -->
->>>>>>> 96524034fb95134739ad4e5e8a577bd33a1b8490
->>>>>>> 279f6122cbd83d9cb254f1a767653ba0c5e1a318
+      </class> <!-- pageTest.MyFavoritePageTestByFazli -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

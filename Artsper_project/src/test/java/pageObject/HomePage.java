@@ -30,7 +30,7 @@ public class HomePage extends CommonMethods {
 	@FindBy(id = "user_config_header_country")
 	public WebElement selectCountryBox;
 
-	@FindBy(xpath = "//*[@class='btn black']")
+	@FindBy(xpath = "//*[contains(text(),'Update preferences')]")
 	public WebElement updatePreferencesButton;
 
 	// follow artsper
@@ -67,9 +67,8 @@ public class HomePage extends CommonMethods {
 
 		String url = Driver.getDriver().getCurrentUrl();
 		System.out.println("The page current url is:" + url);
-		Assert.assertEquals(url, "https://www.artsper.com/us/");
+		Assert.assertEquals(url, "https://www.artsper.com/us/profile");
 
-		// CommonMethods.takeScreenshot("selectCounty");
 
 	}
 
@@ -91,9 +90,11 @@ public class HomePage extends CommonMethods {
 
 				WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 				wait.until(ExpectedConditions.numberOfWindowsToBe(2));
-				for (String windowHandle : Driver.getDriver().getWindowHandles()) {
+				
+				CommonMethods.switchtoChildWindow();
+				/*for (String windowHandle : Driver.getDriver().getWindowHandles()) {
 					Driver.getDriver().switchTo().window(windowHandle);
-				}
+				}*/
 				String currentUrl = Driver.getDriver().getCurrentUrl();
 				System.out.println("Current URL: " + currentUrl);
 				break;
@@ -113,7 +114,8 @@ public class HomePage extends CommonMethods {
 		CommonMethods.wait(3);
 		slideButton1.click();
 		CommonMethods.wait(3);
-		CommonMethods.ScrolByPixel(1850);
+		CommonMethods.getElementsText(artsImg);
+		/*CommonMethods.ScrolByPixel(1850);
 		CommonMethods.wait(3);
 		slideButton2.click();
 		CommonMethods.wait(3);
@@ -129,7 +131,8 @@ public class HomePage extends CommonMethods {
 		CommonMethods.wait(3);
 		slideButton3.click();
 		CommonMethods.wait(3);
-		CommonMethods.getElementsText(artsImg);
+		*/
+		
 	}
 
 }

@@ -1,42 +1,549 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="3" skipped="2">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2023-04-09T11:10:13 EDT" name="Default suite" finished-at="2023-04-09T11:10:43 EDT" duration-ms="29391">
+  <suite started-at="2023-04-13T01:50:28 EDT" name="Suite" finished-at="2023-04-13T01:50:57 EDT" duration-ms="29000">
     <groups>
+      <group name="smokeTestSuit">
+        <method signature="HomePageTest.selectCountrySuccessfullly()[pri:1, instance:pageTest.HomePageTest@353d0772]" name="selectCountrySuccessfullly" class="pageTest.HomePageTest"/>
+        <method signature="LoginPageTest.loginSucessfullly()[pri:1, instance:pageTest.LoginPageTest@6ef888f6]" name="loginSucessfullly" class="pageTest.LoginPageTest"/>
+        <method signature="HomePageTest.verifyALlSocialMedia()[pri:2, instance:pageTest.HomePageTest@353d0772]" name="verifyALlSocialMedia" class="pageTest.HomePageTest"/>
+        <method signature="LoginPageTest.loginFail()[pri:2, instance:pageTest.LoginPageTest@6ef888f6]" name="loginFail" class="pageTest.LoginPageTest"/>
+        <method signature="HomePageTest.verifyImageOnHP()[pri:3, instance:pageTest.HomePageTest@353d0772]" name="verifyImageOnHP" class="pageTest.HomePageTest"/>
+      </group> <!-- smokeTestSuit -->
+      <group name="regressionSuite">
+        <method signature="HomePageTest.selectCountrySuccessfullly()[pri:1, instance:pageTest.HomePageTest@353d0772]" name="selectCountrySuccessfullly" class="pageTest.HomePageTest"/>
+        <method signature="LoginPageTest.loginSucessfullly()[pri:1, instance:pageTest.LoginPageTest@6ef888f6]" name="loginSucessfullly" class="pageTest.LoginPageTest"/>
+        <method signature="HomePageTest.verifyALlSocialMedia()[pri:2, instance:pageTest.HomePageTest@353d0772]" name="verifyALlSocialMedia" class="pageTest.HomePageTest"/>
+        <method signature="LoginPageTest.loginFail()[pri:2, instance:pageTest.LoginPageTest@6ef888f6]" name="loginFail" class="pageTest.LoginPageTest"/>
+        <method signature="HomePageTest.verifyImageOnHP()[pri:3, instance:pageTest.HomePageTest@353d0772]" name="verifyImageOnHP" class="pageTest.HomePageTest"/>
+      </group> <!-- regressionSuite -->
     </groups>
-    <test started-at="2023-04-09T11:10:13 EDT" name="Default test" finished-at="2023-04-09T11:10:43 EDT" duration-ms="29391">
-      <class name="pageTest.AboutArtsperTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pageTest.AboutArtsperTest@149e0f5d]" started-at="2023-04-09T11:10:13 EDT" name="beforeTest" finished-at="2023-04-09T11:10:29 EDT" duration-ms="16039" status="PASS">
+    <test started-at="2023-04-13T01:50:28 EDT" name="Test" finished-at="2023-04-13T01:50:57 EDT" duration-ms="29000">
+      <class name="pageTest.LoginPageTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pageTest.LoginPageTest@6ef888f6]" started-at="2023-04-13T01:50:28 EDT" name="beforeTest" finished-at="2023-04-13T01:50:39 EDT" duration-ms="11421" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: was killed.
+  (chrome not reachable)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: '2603:7000:a800:f36:0:0:0:16e4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '18.0.2.1'
+Driver info: driver.version: Driver
+remote stacktrace: 0   chromedriver                        0x000000010740bae8 chromedriver + 4958952
+1   chromedriver                        0x00000001074037b3 chromedriver + 4925363
+2   chromedriver                        0x0000000106fc51d6 chromedriver + 475606
+3   chromedriver                        0x0000000106ff149c chromedriver + 656540
+4   chromedriver                        0x0000000106fed069 chromedriver + 639081
+5   chromedriver                        0x00000001070386e9 chromedriver + 947945
+6   chromedriver                        0x0000000107037a7f chromedriver + 944767
+7   chromedriver                        0x000000010702e9e3 chromedriver + 907747
+8   chromedriver                        0x0000000106ff8aef chromedriver + 686831
+9   chromedriver                        0x0000000106ffa00e chromedriver + 692238
+10  chromedriver                        0x00000001073c79ad chromedriver + 4680109
+11  chromedriver                        0x00000001073ccc12 chromedriver + 4701202
+12  chromedriver                        0x00000001073d379f chromedriver + 4728735
+13  chromedriver                        0x00000001073cdb7a chromedriver + 4705146
+14  chromedriver                        0x00000001073a027e chromedriver + 4518526
+15  chromedriver                        0x00000001073ed908 chromedriver + 4835592
+16  chromedriver                        0x00000001073eda87 chromedriver + 4835975
+17  chromedriver                        0x00000001073fd00f chromedriver + 4898831
+18  libsystem_pthread.dylib             0x00007ff807c4d4e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff807c48f6b thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: was killed.
+  (chrome not reachable)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: '2603:7000:a800:f36:0:0:0:16e4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '18.0.2.1'
+Driver info: driver.version: Driver
+remote stacktrace: 0   chromedriver                        0x000000010740bae8 chromedriver + 4958952
+1   chromedriver                        0x00000001074037b3 chromedriver + 4925363
+2   chromedriver                        0x0000000106fc51d6 chromedriver + 475606
+3   chromedriver                        0x0000000106ff149c chromedriver + 656540
+4   chromedriver                        0x0000000106fed069 chromedriver + 639081
+5   chromedriver                        0x00000001070386e9 chromedriver + 947945
+6   chromedriver                        0x0000000107037a7f chromedriver + 944767
+7   chromedriver                        0x000000010702e9e3 chromedriver + 907747
+8   chromedriver                        0x0000000106ff8aef chromedriver + 686831
+9   chromedriver                        0x0000000106ffa00e chromedriver + 692238
+10  chromedriver                        0x00000001073c79ad chromedriver + 4680109
+11  chromedriver                        0x00000001073ccc12 chromedriver + 4701202
+12  chromedriver                        0x00000001073d379f chromedriver + 4728735
+13  chromedriver                        0x00000001073cdb7a chromedriver + 4705146
+14  chromedriver                        0x00000001073a027e chromedriver + 4518526
+15  chromedriver                        0x00000001073ed908 chromedriver + 4835592
+16  chromedriver                        0x00000001073eda87 chromedriver + 4835975
+17  chromedriver                        0x00000001073fd00f chromedriver + 4898831
+18  libsystem_pthread.dylib             0x00007ff807c4d4e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff807c48f6b thread_start + 15
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at utilities.Driver.getDriver(Driver.java:28)
+at pageTest.LoginPageTest.beforeTest(LoginPageTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="AboutArtspert()[pri:0, instance:pageTest.AboutArtsperTest@149e0f5d]" started-at="2023-04-09T11:10:29 EDT" name="AboutArtspert" finished-at="2023-04-09T11:10:39 EDT" duration-ms="9108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AboutArtspert -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTest.AboutArtsperTest@149e0f5d]" started-at="2023-04-09T11:10:39 EDT" name="tearDown" finished-at="2023-04-09T11:10:43 EDT" duration-ms="4169" status="PASS">
-=======
-  <suite started-at="2023-04-09T11:20:39 EDT" name="Default suite" finished-at="2023-04-09T11:21:09 EDT" duration-ms="29695">
-    <groups>
-    </groups>
-    <test started-at="2023-04-09T11:20:39 EDT" name="Default test" finished-at="2023-04-09T11:21:09 EDT" duration-ms="29695">
-      <class name="pageTest.BlogPageTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pageTest.BlogPageTest@6ae5aa72]" started-at="2023-04-09T11:20:39 EDT" name="beforeTest" finished-at="2023-04-09T11:20:46 EDT" duration-ms="6556" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pageTest.LoginPageTest@6ef888f6]" started-at="2023-04-13T01:50:28 EDT" name="beforeTest" finished-at="2023-04-13T01:50:47 EDT" duration-ms="19325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="BlogpageTest()[pri:0, instance:pageTest.BlogPageTest@6ae5aa72]" started-at="2023-04-09T11:20:46 EDT" name="BlogpageTest" finished-at="2023-04-09T11:21:05 EDT" duration-ms="19610" status="PASS">
+        <test-method signature="loginFail()[pri:2, instance:pageTest.LoginPageTest@6ef888f6]" started-at="2023-04-13T01:50:39 EDT" name="loginFail" finished-at="2023-04-13T01:50:39 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: was killed.
+  (chrome not reachable)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: '2603:7000:a800:f36:0:0:0:16e4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '18.0.2.1'
+Driver info: driver.version: Driver
+remote stacktrace: 0   chromedriver                        0x000000010740bae8 chromedriver + 4958952
+1   chromedriver                        0x00000001074037b3 chromedriver + 4925363
+2   chromedriver                        0x0000000106fc51d6 chromedriver + 475606
+3   chromedriver                        0x0000000106ff149c chromedriver + 656540
+4   chromedriver                        0x0000000106fed069 chromedriver + 639081
+5   chromedriver                        0x00000001070386e9 chromedriver + 947945
+6   chromedriver                        0x0000000107037a7f chromedriver + 944767
+7   chromedriver                        0x000000010702e9e3 chromedriver + 907747
+8   chromedriver                        0x0000000106ff8aef chromedriver + 686831
+9   chromedriver                        0x0000000106ffa00e chromedriver + 692238
+10  chromedriver                        0x00000001073c79ad chromedriver + 4680109
+11  chromedriver                        0x00000001073ccc12 chromedriver + 4701202
+12  chromedriver                        0x00000001073d379f chromedriver + 4728735
+13  chromedriver                        0x00000001073cdb7a chromedriver + 4705146
+14  chromedriver                        0x00000001073a027e chromedriver + 4518526
+15  chromedriver                        0x00000001073ed908 chromedriver + 4835592
+16  chromedriver                        0x00000001073eda87 chromedriver + 4835975
+17  chromedriver                        0x00000001073fd00f chromedriver + 4898831
+18  libsystem_pthread.dylib             0x00007ff807c4d4e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff807c48f6b thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: was killed.
+  (chrome not reachable)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: '2603:7000:a800:f36:0:0:0:16e4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '18.0.2.1'
+Driver info: driver.version: Driver
+remote stacktrace: 0   chromedriver                        0x000000010740bae8 chromedriver + 4958952
+1   chromedriver                        0x00000001074037b3 chromedriver + 4925363
+2   chromedriver                        0x0000000106fc51d6 chromedriver + 475606
+3   chromedriver                        0x0000000106ff149c chromedriver + 656540
+4   chromedriver                        0x0000000106fed069 chromedriver + 639081
+5   chromedriver                        0x00000001070386e9 chromedriver + 947945
+6   chromedriver                        0x0000000107037a7f chromedriver + 944767
+7   chromedriver                        0x000000010702e9e3 chromedriver + 907747
+8   chromedriver                        0x0000000106ff8aef chromedriver + 686831
+9   chromedriver                        0x0000000106ffa00e chromedriver + 692238
+10  chromedriver                        0x00000001073c79ad chromedriver + 4680109
+11  chromedriver                        0x00000001073ccc12 chromedriver + 4701202
+12  chromedriver                        0x00000001073d379f chromedriver + 4728735
+13  chromedriver                        0x00000001073cdb7a chromedriver + 4705146
+14  chromedriver                        0x00000001073a027e chromedriver + 4518526
+15  chromedriver                        0x00000001073ed908 chromedriver + 4835592
+16  chromedriver                        0x00000001073eda87 chromedriver + 4835975
+17  chromedriver                        0x00000001073fd00f chromedriver + 4898831
+18  libsystem_pthread.dylib             0x00007ff807c4d4e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff807c48f6b thread_start + 15
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at utilities.Driver.getDriver(Driver.java:28)
+at pageTest.LoginPageTest.beforeTest(LoginPageTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BlogpageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTest.BlogPageTest@6ae5aa72]" started-at="2023-04-09T11:21:05 EDT" name="tearDown" finished-at="2023-04-09T11:21:09 EDT" duration-ms="3444" status="PASS">
->>>>>>> 279f6122cbd83d9cb254f1a767653ba0c5e1a318
+        </test-method> <!-- loginFail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTest.LoginPageTest@6ef888f6]" started-at="2023-04-13T01:50:39 EDT" name="tearDown" finished-at="2023-04-13T01:50:39 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- pageTest.AboutArtsperTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method signature="loginSucessfullly()[pri:1, instance:pageTest.LoginPageTest@6ef888f6]" started-at="2023-04-13T01:50:47 EDT" name="loginSucessfullly" finished-at="2023-04-13T01:50:47 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Chrome failed to start: was killed.
+  (chrome not reachable)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: '2603:7000:a800:f36:0:0:0:16e4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '18.0.2.1'
+Driver info: driver.version: Driver
+remote stacktrace: 0   chromedriver                        0x000000010740bae8 chromedriver + 4958952
+1   chromedriver                        0x00000001074037b3 chromedriver + 4925363
+2   chromedriver                        0x0000000106fc51d6 chromedriver + 475606
+3   chromedriver                        0x0000000106ff149c chromedriver + 656540
+4   chromedriver                        0x0000000106fed069 chromedriver + 639081
+5   chromedriver                        0x00000001070386e9 chromedriver + 947945
+6   chromedriver                        0x0000000107037a7f chromedriver + 944767
+7   chromedriver                        0x000000010702e9e3 chromedriver + 907747
+8   chromedriver                        0x0000000106ff8aef chromedriver + 686831
+9   chromedriver                        0x0000000106ffa00e chromedriver + 692238
+10  chromedriver                        0x00000001073c79ad chromedriver + 4680109
+11  chromedriver                        0x00000001073ccc12 chromedriver + 4701202
+12  chromedriver                        0x00000001073d379f chromedriver + 4728735
+13  chromedriver                        0x00000001073cdb7a chromedriver + 4705146
+14  chromedriver                        0x00000001073a027e chromedriver + 4518526
+15  chromedriver                        0x00000001073ed908 chromedriver + 4835592
+16  chromedriver                        0x00000001073eda87 chromedriver + 4835975
+17  chromedriver                        0x00000001073fd00f chromedriver + 4898831
+18  libsystem_pthread.dylib             0x00007ff807c4d4e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff807c48f6b thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: was killed.
+  (chrome not reachable)
+  (The process started from chrome location /Applications/Google Chrome.app/Contents/MacOS/Google Chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: '2603:7000:a800:f36:0:0:0:16e4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '18.0.2.1'
+Driver info: driver.version: Driver
+remote stacktrace: 0   chromedriver                        0x000000010740bae8 chromedriver + 4958952
+1   chromedriver                        0x00000001074037b3 chromedriver + 4925363
+2   chromedriver                        0x0000000106fc51d6 chromedriver + 475606
+3   chromedriver                        0x0000000106ff149c chromedriver + 656540
+4   chromedriver                        0x0000000106fed069 chromedriver + 639081
+5   chromedriver                        0x00000001070386e9 chromedriver + 947945
+6   chromedriver                        0x0000000107037a7f chromedriver + 944767
+7   chromedriver                        0x000000010702e9e3 chromedriver + 907747
+8   chromedriver                        0x0000000106ff8aef chromedriver + 686831
+9   chromedriver                        0x0000000106ffa00e chromedriver + 692238
+10  chromedriver                        0x00000001073c79ad chromedriver + 4680109
+11  chromedriver                        0x00000001073ccc12 chromedriver + 4701202
+12  chromedriver                        0x00000001073d379f chromedriver + 4728735
+13  chromedriver                        0x00000001073cdb7a chromedriver + 4705146
+14  chromedriver                        0x00000001073a027e chromedriver + 4518526
+15  chromedriver                        0x00000001073ed908 chromedriver + 4835592
+16  chromedriver                        0x00000001073eda87 chromedriver + 4835975
+17  chromedriver                        0x00000001073fd00f chromedriver + 4898831
+18  libsystem_pthread.dylib             0x00007ff807c4d4e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff807c48f6b thread_start + 15
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at utilities.Driver.getDriver(Driver.java:28)
+at pageTest.LoginPageTest.beforeTest(LoginPageTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSucessfullly -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTest.LoginPageTest@6ef888f6]" started-at="2023-04-13T01:50:47 EDT" name="tearDown" finished-at="2023-04-13T01:50:47 EDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pageTest.LoginPageTest -->
+      <class name="pageTest.HomePageTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pageTest.HomePageTest@353d0772]" started-at="2023-04-13T01:50:28 EDT" name="beforeTest" finished-at="2023-04-13T01:50:47 EDT" duration-ms="19327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pageTest.HomePageTest@353d0772]" started-at="2023-04-13T01:50:28 EDT" name="beforeTest" finished-at="2023-04-13T01:50:47 EDT" duration-ms="19326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pageTest.HomePageTest@353d0772]" started-at="2023-04-13T01:50:28 EDT" name="beforeTest" finished-at="2023-04-13T01:50:47 EDT" duration-ms="19326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="selectCountrySuccessfullly()[pri:1, instance:pageTest.HomePageTest@353d0772]" started-at="2023-04-13T01:50:47 EDT" name="selectCountrySuccessfullly" finished-at="2023-04-13T01:50:54 EDT" duration-ms="6606" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.49)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: '2603:7000:a800:f36:0:0:0:16e4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bb/22gbqwkd3_q...}, goog:chromeOptions: {debuggerAddress: localhost:55090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3add19863e0ea53c5afd15f7cff1b1a6
+*** Element info: {Using=xpath, value=//*[@name='app_customer_registration']//a}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.49)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: '2603:7000:a800:f36:0:0:0:16e4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bb/22gbqwkd3_q...}, goog:chromeOptions: {debuggerAddress: localhost:55090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3add19863e0ea53c5afd15f7cff1b1a6
+*** Element info: {Using=xpath, value=//*[@name='app_customer_registration']//a}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at pageObject.LoginPage.loginSuccessfullyMethod(LoginPage.java:51)
+at pageTest.HomePageTest.selectCountrySuccessfullly(HomePageTest.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountrySuccessfullly -->
+        <test-method signature="verifyALlSocialMedia()[pri:2, instance:pageTest.HomePageTest@353d0772]" started-at="2023-04-13T01:50:47 EDT" name="verifyALlSocialMedia" finished-at="2023-04-13T01:50:54 EDT" duration-ms="6605" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//*[@id="app-container"]/footer/div[2]/section/div[1]/h4
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: '2603:7000:a800:f36:0:0:0:16e4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '18.0.2.1'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id="app-container"]/footer/div[2]/section/div[1]/h4
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: '2603:7000:a800:f36:0:0:0:16e4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '18.0.2.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+at pageObject.HomePage.followArtsperText(HomePage.java:77)
+at pageTest.HomePageTest.verifyALlSocialMedia(HomePageTest.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyALlSocialMedia -->
+        <test-method signature="verifyImageOnHP()[pri:3, instance:pageTest.HomePageTest@353d0772]" started-at="2023-04-13T01:50:47 EDT" name="verifyImageOnHP" finished-at="2023-04-13T01:50:49 EDT" duration-ms="2087" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: '2603:7000:a800:f36:0:0:0:16e4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bb/22gbqwkd3_q...}, goog:chromeOptions: {debuggerAddress: localhost:55090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3add19863e0ea53c5afd15f7cff1b1a6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: '2603:7000:a800:f36:0:0:0:16e4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.1', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/bb/22gbqwkd3_q...}, goog:chromeOptions: {debuggerAddress: localhost:55090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3add19863e0ea53c5afd15f7cff1b1a6
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+at utilities.CommonMethods.getElementsText(CommonMethods.java:344)
+at pageObject.HomePage.slideImgOnHP(HomePage.java:108)
+at pageTest.HomePageTest.verifyImageOnHP(HomePageTest.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyImageOnHP -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTest.HomePageTest@353d0772]" started-at="2023-04-13T01:50:49 EDT" name="tearDown" finished-at="2023-04-13T01:50:54 EDT" duration-ms="4829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTest.HomePageTest@353d0772]" started-at="2023-04-13T01:50:54 EDT" name="tearDown" finished-at="2023-04-13T01:50:57 EDT" duration-ms="3005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTest.HomePageTest@353d0772]" started-at="2023-04-13T01:50:54 EDT" name="tearDown" finished-at="2023-04-13T01:50:57 EDT" duration-ms="3003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pageTest.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

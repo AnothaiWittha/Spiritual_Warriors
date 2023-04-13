@@ -13,25 +13,22 @@ import utilities.MyIListeners;
 import utilities.PageInitializer;
 
 @Listeners(MyIListeners.class)
-public class HomePageTest extends PageInitializer {
+public class HomePageTest extends PageInitializer{
 
 	@BeforeMethod
 	public void beforeTest() {
 		Driver.getDriver();
 	}
 
-	@Test(priority = 1, enabled = false, groups = { "smokeTestSuit", "regressionSuite" })
-	public void loginSuccessfully() {
-		lp.loginSuccessfullyMethod();
-	}
 
-	@Test(priority = 2, enabled = true, groups = { "smokeTestSuit", "regressionSuite" })
+	@Test(priority = 1, enabled = true, groups = { "smokeTestSuit", "regressionSuite" })
 	public void selectCountrySuccessfullly() throws IOException {
+		lp.loginSuccessfullyMethod();
 		hp.selectCounty();
 
 	}
 
-	@Test(priority = 3, enabled = true, groups = { "smokeTestSuit", "regressionSuite" })
+	@Test(priority = 2, enabled = true, groups = { "smokeTestSuit", "regressionSuite" })
 	public void verifyALlSocialMedia() {
 
 		hp.followArtsperText();
@@ -42,7 +39,7 @@ public class HomePageTest extends PageInitializer {
 
 	}
 
-	@Test(priority = 4, enabled = true, groups = { "smokeTestSuit", "regressionSuite" })
+	@Test(priority = 3, enabled = true, groups = { "smokeTestSuit", "regressionSuite" })
 	public void verifyImageOnHP() {
 		hp.slideImgOnHP();
 
