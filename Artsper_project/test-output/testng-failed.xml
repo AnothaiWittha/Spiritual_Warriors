@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
       <class name="pageTest.LoginPageTest">
@@ -9,6 +10,27 @@
           <include name="tearDown"/>
           <include name="beforeTest"/>
           <include name="loginFail"/>
+
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+
+      <class name="pageTest.ArtworksPageTest">
+
+      <class name="pageTest.BlogPageTest">
+
+      <class name="pageTest.MyInformationTestAysem">
+
+        <methods>
+          <include name="verifyArtworksButton"/>
+          <include name="beforeTest"/>
+
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pageTest.ArtworksPageTest -->
+
+          <include name="budgetPreference"/>
+          <include name="afterTest"/>
+
         </methods>
       </class> <!-- pageTest.LoginPageTest -->
       <class name="pageTest.HomePageTest">
@@ -19,7 +41,13 @@
           <include name="tearDown"/>
           <include name="selectCountrySuccessfullly"/>
         </methods>
+
       </class> <!-- pageTest.HomePageTest -->
+
+      </class> <!-- pageTest.BlogPageTest -->
+
+      </class> <!-- pageTest.HomePage2Test -->
+
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
